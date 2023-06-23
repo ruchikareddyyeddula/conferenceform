@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css/style.css">
+  <title>Conference Registration Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Conference Registration Form</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      
+
+      <div class="form-group">
+        <label for="affiliation">Affiliation:</label>
+        <input type="text" id="affiliation" name="affiliation" required>
+      </div>
+
+      <div class="form-group">
+        <p>
+          <label for="dietary">Dietary Preferences:</label>
+        <input type="checkbox" id="vegetarian" name="dietary[]" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+                <input type="checkbox" id="vegan" name="dietary[]" value="Vegan">
+        <label for="vegan">Vegan</label>
+        <input type="checkbox" id="gluten-free" name="dietary[]" value="Gluten-Free">
+        <label for="gluten-free">Gluten-Free</label>
+        </p>
+      </div>
+
+      <div class="form-group">
+    
+          <label for="workshop">Preferred Workshop:</label>
+        <select id="workshop" name="workshop" required>
+          <option value="">Select Workshop</option>
+          <option value="workshop1">MERN</option>
+          <option value="workshop2">MEAN</option>
+          <option value="workshop3">ANGULAR</option>
+          <option value="workshop3">CLOUD</option>
+          <option value="workshop3">UI/UX</option>
+        </select>
+      
+      </div>
+
+      <div class="form-group">
+        <p>
+          <label for="registration-type">Registration Type:</label>
+        <input type="radio" id="general" name="registration-type" value="General Attendee" required>
+        <label for="general">General Attendee</label>
+        <input type="radio" id="student" name="registration-type" value="Student">
+        <label for="student">Student</label>
+        <input type="radio" id="vip" name="registration-type" value="VIP">
+        <label for="vip">VIP</label>
+        </p>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+  }
+  body{
+    background-image: url("../q.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    height: 100vh;
+    width: 100%;
+  }
+h1{
+  text-align: center;
+  background-color: darkgrey;
+}
+  form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+
+  button[type="submit"] {
+    display: flexbox;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    
+    background-color: crimson;
+  }
+
+  @media screen and (max-width: 420px) {
+    /* Adjust styles for smaller screens if necessary */
+    body{
+      width: 100%;
+    }
+    .container {
+      max-width: 400px;
+    }
+  }
